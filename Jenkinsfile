@@ -9,7 +9,7 @@ pipeline {
 
     stage('SSH Connection') {
       steps {
-        sh 'ls -la'
+        sh 'cd /var/www/html/'
       }
     }
 
