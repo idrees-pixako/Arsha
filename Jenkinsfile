@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('SSH Connection') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
