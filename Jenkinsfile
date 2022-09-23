@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout Code') {
+    stage('Git Logs') {
       steps {
-        git(url: 'https://github.com/idrees-pixako/Arsha', branch: 'main')
+        sh 'git log --pretty=oneline'
       }
     }
 
